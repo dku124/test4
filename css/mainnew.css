@@ -1,0 +1,53 @@
+:root {
+  --primary-color: #e6c476;
+  --bg-color: #e6c4761a !important;
+  --bg--footer: #524527;
+}
+.site-header .logo,
+.footer-bottom .logo {
+  padding: 8px;
+  font-family: cursive;
+  font-size: 24px;
+  color: #e6c476;
+  text-decoration: none;
+}
+.header-navigation {
+  justify-content: flex-end;
+}
+.info-block p {
+  color: #fff;
+}
+.product-wrap {
+  background-color: var(--bg-color);
+}
+.product-article,
+.product-category,
+.author-feedback,
+.android-details {
+  background-color: #fff;
+}
+.footer-wrap {
+  background-color: var(--bg--footer);
+}
+.footer-wrap .site-footer .footer-bottom .copyright,
+.footer-wrap .site-footer .footer-columns .info-block .footer-block-text {
+  max-width: 100%;
+}
+.copyright {
+  text-align: center !important;
+}
+.footer-wrap .site-footer .footer-columns .info-block {
+  flex-direction: column;
+}
+.product-wrap .product-container .product-img img {
+  height: 100%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 767px) {
+  .product-container {
+    flex-direction: column;
+  }
+  .get-app-btn {
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apps Review</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/simplePagination.css" />
+    <link rel="stylesheet" href="./css/style2.css" />
+    <link rel="stylesheet" href="./css/review.css" />
+  </head>
+  <body>
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
+    <style>
+      #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        z-index: 99;
+      }
+
+      #status {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background-image: url(images/gif.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+      $('#preloader').show(0).delay(3000).hide(0);
+    </script>
+    <div class="page pageload">
+      <div class="header" id="header">
+        <div class="container">
+          <div class="logo">
+            <a href="#" class="image"> VaiThuHayHo </a>
+          </div>
+          <div class="search">
+            <form action="" method="get">
+              <input type="text" placeholder="Search" />
+              <button class="button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+          <div class="navbar">
+            <div class="item">
+              <a href="review.html" class="link">App Reviews</a>
+            </div>
+            <div class="item">
+              <a href="aboutus.html" class="link">About us</a>
+            </div>
+          </div>
+          <div class="close button" id="close-button">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </div>
+      <div class="header-mobile">
+        <div class="list-button" id="list-button">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo">
+          <a href="#" class="image"> VaiThuHayHo </a>
+        </div>
+      </div>
+      <div class="body">
+        <div class="container">
+          <div class="section breadcrumbs">
+            <a href="#" class="title">Home</a>
+            <i class="fa-solid fa-arrow-right"></i>
+            <a href="#" class="title">App Review</a>
+          </div>
+          <div class="section">
+            <div class="main-content">
+              <div class="section review" style="margin-bottom: 0">
+                <div class="review-container">
+                  <h1>App’s Reviews</h1>
+                  <p>Reviews of selected apps that you will definitely like. Choose the best of the best with us.</p>
+                  <ul class="review-list">
+                    <li>
+                      <a href="fortnite-the-pump-shotgun.html" class="review-card">
+                        <img src="./images/f1.png" />
+                        <span class="review-card-text">
+                          <span class="communication">Action</span> <span class="title">Fortnite</span>
+                          <span class="rating"> <span class="rating-info five" title="User rating 5"></span> </span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="gta-5-top-5-cars-you-should-look-for.html" class="review-card">
+                        <img src="./images/g1.png" />
+                        <span class="review-card-text">
+                          <span class="communication">Action</span> <span class="title">Grand Theft Auto V</span>
+                          <span class="rating"> <span class="rating-info five" title="User rating 5"></span> </span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="minecraft-potter-world-mc.html" class="review-card">
+                        <img src="./images/m1.png" />
+                        <span class="review-card-text">
+                          <span class="communication">Action</span> <span class="title">Minecraft</span>
+                          <span class="rating"> <span class="rating-info five" title="User rating 5"></span> </span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="among-us-mira-hq-best-locations-to-kill.html" class="review-card">
+                        <img src="./images/a1.png" />
+                        <span class="review-card-text">
+                          <span class="communication">Action</span> <span class="title">Among us</span>
+                          <span class="rating"> <span class="rating-info five" title="User rating 5"></span> </span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="fall-guys-season-1-is-the-first-season-introduced-in-fall-guys.html" class="review-card">
+                        <img src="./images/fa1.png" />
+                        <span class="review-card-text">
+                          <span class="communication">Action</span> <span class="title">Fall guys</span>
+                          <span class="rating"> <span class="rating-info five" title="User rating 5"></span> </span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="spiderman-is-an-openedworld-game.html" class="review-card">
+                        <img src="./images/s1.png" />
+                        <span class="review-card-text">
+                          <span class="communication">Action</span> <span class="title">Spider man</span>
+                          <span class="rating"> <span class="rating-info five" title="User rating 5"></span> </span>
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div id="pagination-container"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div>
+            <div class="logo">
+              <a href="#" class="image"> VaiThuHayHo </a>
+            </div>
+            <div class="description">
+              VaiThuHayHo team invites you to the world of the finest games and distinctly-reviewed apps. Every day we choose and check zillions of different
+              mobile programs to provide you with entertainment and honest reviews. Our professional editors strive to make VaiThuHayHo a top-notch source
+              for getting all the fans of iOS and Android games and apps together.
+            </div>
+            <div class="social">
+              <div class="header">Share</div>
+              <div class="body">
+                <a href="#" class="fb"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="copyright">© 2022 VaiThuHayHo - All Rights Reserved</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./js/pagiSimple.js"></script>
+    <script src="./js/pagination.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

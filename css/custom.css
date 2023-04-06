@@ -1,0 +1,160 @@
+body {
+    background: #fbfbfb;
+}
+.header {
+    border-bottom: 2px solid #144223;
+}
+.header h1{
+    margin-bottom: 3px;
+}
+.main {
+    margin:6px 0 10px;
+}
+.home_left {
+    width: 30%;
+    float: left;
+}
+.home_right {
+    width: 68%;
+    float: right;
+}
+.content {
+    box-shadow: 0 0 3px #ccc;
+    padding: 5px 10px 0px;
+    background: #fff;
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    min-height: 350px;
+    text-align: justify;
+}
+ul {
+    list-style-type: none;
+    padding-left: 7px;
+}
+a {
+    color: #116ab1;
+    text-decoration: none;
+}
+.step {
+    font-weight: bold;
+}
+.footer {
+    background: #000000;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #fff;
+}
+.footer a {
+    margin: auto;
+    color: #ffffff;
+}
+#cookieAcceptBar {
+    display: block;
+    line-height: 30px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+}
+.cookieAcceptBar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+#cookieAcceptBarConfirm {
+    background: #2387c0;
+    border: none;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+.menu_btn{
+    display: none;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.line2{
+    margin: 3px 0;
+}
+@keyframes move {
+    from{
+        margin: 3px 0;
+        opacity: 1;
+    }
+    to {
+        margin: -2px 0;
+        opacity: 0;
+    }
+}
+@keyframes move2 {
+    from{
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(45deg);
+    }
+}
+@keyframes move3 {
+    from{
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(135deg);
+    }
+}
+.line{
+    display: block;
+    transition: 1s;
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+}
+.menu_btn.active .line2{
+    animation: move .2s forwards;
+}
+
+.menu_btn.active .line1{
+    animation: move2 .2s forwards .2s;
+}
+.menu_btn.active .line3{
+    animation: move3 .2s forwards .2s;
+}
+@media only screen and (max-width: 1000px) {
+    .container {
+        max-width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    .cookieAcceptBar .container{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    img {
+        max-width: 75%;
+        height: auto;
+        margin: auto;
+    }
+    .home_left {
+        display: none;
+        width: 100%;
+        min-height: auto;
+    }
+    .home_right {
+        width: 100%;
+    }
+    .menu_btn {
+        display: block;
+    }
+    .footer {
+        padding: 5px 0;
+        font-size: 16px;
+    }
+}
